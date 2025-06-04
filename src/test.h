@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-struct Vector2 {
+typedef struct Vector2 {
     int x;
     int y;
-};
+} Vector2;
 
-void rotate_clockwise(struct Vector2 vec);
+Vector2 rotate_clockwise(Vector2 vec);
 
-void print_vector(struct Vector2 vec);
+void print_vector(Vector2 vec);
 
-struct Vector2 new_vector(int x, int y);
+Vector2 new_vector(int x, int y);
